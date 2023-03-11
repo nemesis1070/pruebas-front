@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.expanded-toolbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mat-card {
+      max-width: 400px;
+      margin: 2em auto;
+      text-align: center;
+
+}
+
+.mat-card-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+}
+    
+
+.button{
+      margin-bottom: 2rem;
+}
+
+.form{
+      max-width: 400px;
+      margin: 2em auto;
+      text-align: left; 
+}
+.form-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+}
+
+.h2-texto{
+      text-align: center; 
+}

@@ -1,0 +1,22 @@
+<h2 mat-dialog-title>{{tituloAccion}} Entidad</h2>
+<mat-dialog-content>
+    <mat-card class="form">
+        <mat-card-content class="form-content">
+          <form [formGroup]="formularioEntidad">         
+            <mat-form-field class="full-width-input">
+                <mat-label>Nombre</mat-label>
+              <input matInput formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field class="full-width-input">
+                <mat-label>Direccion</mat-label>
+              <input matInput formControlName="direccion">
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+      </mat-card>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+    <button mat-raised-button mat-dialog-close color="warn">Cerrar</button>
+    <button mat-raised-button color="primary" [disabled]="formularioEntidad.invalid" (click)="guardarEditar_Entidad()">{{botonAccion}}</button>
+</mat-dialog-actions>

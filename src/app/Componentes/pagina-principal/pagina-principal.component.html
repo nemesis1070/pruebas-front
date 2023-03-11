@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="expanded-toolbar">
+        <span>
+          <button mat-button routerLink="/principal/entidad"><mat-icon>home</mat-icon>Consultar Entidades</button>
+          <button mat-button routerLink="/principal/empleado"><mat-icon>person</mat-icon>Consultar Empleados</button>
+        </span>
+      <div fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <button mat-button (click)="cerrarSesion()">
+          <mat-icon>exit_to_app</mat-icon>
+          Cerrar Sesion
+        </button>
+      </div>
+    </mat-toolbar>
+
+    <router-outlet></router-outlet>
